@@ -1,0 +1,127 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
+</div>
+<!-- <h2>Here are some links to help you start: </h2> -->
+<!-- <div *ngIf="cond">ngIf Conditoin</div> -->
+<!-- <div *ngIf="cond; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+  <div>this is ng  then Block template</div>
+  </ng-template>
+<ng-template #elseBlock>
+  <div>this is ng else Block template</div>
+  </ng-template> -->
+  <!-- <h2>ng Switch Condition</h2>
+  <select (change) = "setvalue($event)">
+    <option value="">--select--</option>
+    <option value="one">One</option>
+    <option value="two">Two</option>
+    <option value="three">Three</option>
+    <option value="another">Another</option>
+  </select>
+  <div [ngSwitch]= "choose">
+    <h3 *ngSwitchCase = "'one'">First</h3>
+    <h3 *ngSwitchCase = "'two'">Second</h3>
+    <h3 *ngSwitchCase = "'three'">Third</h3>
+    <h3 *ngSwitchDefault>Default</h3>
+  </div> -->
+   <!-- <h2>Using For Loop</h2>
+  <ul>
+    <li *ngFor="let student of Students; let i=index; let f=first; let l=last; let e=even; let o=odd;">
+      {{i+1}} - {{student.name}} - {{f}} - {{l}} - {{e}} - {{o}}
+    </li>
+  </ul> -->
+<!-- <h2>TrackBy Example</h2>
+<table border="1">
+  <thead>
+  <tr>
+    <td><strong>ID</strong></td>
+    <td><strong>Name</strong></td>
+    <td><strong>Gender</strong></td>
+    <td><strong>Age</strong></td>
+    <td><strong>Course</strong></td>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let std of students; trackBy:trackByStudents">
+      <td>{{std.id}}</td>
+      <td>{{std.name}}</td>
+      <td>{{std.gender}}</td>
+      <td>{{std.age}}</td>
+      <td>{{std.course}}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<button type="button" name="button" (click)="getMoreStudents()">Get more Students</button> -->
+
+<!-- <h2>Grouping With ngFor</h2>
+<ul *ngFor="let group of countryDetails;">
+  <li>{{group.country}}</li>
+  <ul>
+    <li *ngFor="let person of group.people" [ngStyle]="{'color':getcolor(group.country)}">
+      {{person.name}}
+    </li>
+  </ul>
+</ul>
+
+<h2>Using ngClass </h2> -->
+<!-- ngClass as a string -->
+<!-- <p [ngClass]="'one two'">Using ngClass with string Example</p>
+<div *ngFor='let user of users' [ngClass]="'three four'">
+  {{user}}
+</div> -->
+<!-- ngclass as a Array -->
+<!-- <p [ngClass]="['one','two']">Using ngClass with string Example</p> -->
+<!-- ngClass as Object -->
+<!-- <p [ngClass]="{'three':true,'one':false}">Using ngClass with string Example</p> -->
+<!-- ngclass using component method -->
+<!-- <div [ngClass]="getcssclass('mode')">
+    ngclass using component method
+</div> -->
+<!-- Interpolation Binding -->
+
+<!-- <h2>Hello {{firstName+' '+lastName}}</h2> -->
+<!-- Property Binding -->
+<!-- <span [innerHTML] = 'lastName'></span> -->
+<!-- <img [src] = "'https://cashgw.website/public/images/logo.png'" [height] = "100" [width] = "200"> -->
+<!-- Attribute Binding -->
+<!-- <table [attr.border]="pxsolid" height="200" width="400">
+  <thead>
+    <th [attr.colspan]="cols">Students Details</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ID</td>
+      <td>NAME</td>
+      <td>SALARY</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Bablu</td>
+      <td>20000</td>
+    </tr>
+  </tbody>
+</table> -->
+<!-- <h2>Event Example</h2>
+<button type="button" name="button" (click)="OnClick()">Click Me</button>
+<button type="button" name="button" (click)="show()">click Event</button> -->
+
+<!-- two way data binding with Event-->
+  <!-- Enter you name : <input [value]="data" (input)='data=$event.target.value'>
+<br>
+Your name : {{data}}
+<br> -->
+<!-- two way data binding with ngmodel-->
+<!-- <input [(ngModel)] = 'data1'>
+<br>
+Your name : {{data1}} -->
+<div style="text-align:center">
+<router-outlet></router-outlet>
+</div>
+<div style="text-align:center">
+    <p>Footer</p>
+</div>
